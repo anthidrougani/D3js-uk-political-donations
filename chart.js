@@ -119,6 +119,13 @@ function total() {
 		.on("tick", all)
 		.start();
 }
+function lettersfunc(e) //test//
+{
+	node.each(moveToLetters(e.alpha));
+
+		node.attr("cx", function(d) { return d.x; })
+			.attr("cy", function(d) {return d.y; });
+}
 
 function partyGroup() {
 	force.gravity(0)
