@@ -143,7 +143,7 @@ li {
 }
 
 /* Amount */
-#view-donation-amount {
+#view-amount-of-donation {
     height: 100%;
     left: 450px;
     width: 370px;
@@ -159,13 +159,10 @@ li {
     top: 335px;
     left: -80px;
 }
-#fourth {
+#last {
     top: 480px;
     right: -80px;
-}
-#last {
-    top: 650px;
-    left: -70px;
+
 }
 /* End of view */
 
