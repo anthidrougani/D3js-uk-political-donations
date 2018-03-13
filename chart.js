@@ -158,6 +158,13 @@ function fundsType() {
 		.on("tick", types)
 		.start();
 }
+function donationType() {
+	force.gravity(0)
+		.friction(0.8)
+		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
+		.on("tick", donations)
+		.start();
+}
 
 function parties(e) {
 	node.each(moveToParties(e.alpha));
@@ -180,13 +187,7 @@ function types(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
-function donationType() {
-	force.gravity(0)
-		.friction(0.8)
-		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
-		.on("tick", donations)
-		.start();
-}
+
 function donations(e) {
 	node.each(moveToDonations(e.alpha));
 
