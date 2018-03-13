@@ -48,6 +48,7 @@ function transition(name) {
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
+		$("#view-donation-amount").fadeOut(250);
 		return total();
 		//location.reload();
 	}
@@ -57,6 +58,7 @@ function transition(name) {
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-party-type").fadeIn(1000);
+		$("#view-donation-amount").fadeOut(250);
 		return partyGroup();
 	}
 	if (name === "group-by-donor-type") {
@@ -65,6 +67,7 @@ function transition(name) {
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-donor-type").fadeIn(1000);
+		$("#view-donation-amount").fadeOut(250);
 		return donorType();
 	}
 	if (name === "group-by-money-source")
@@ -73,6 +76,7 @@ function transition(name) {
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeIn(1000);
+	        $("#view-donation-amount").fadeOut(250);
 		return fundsType();
 	}
 if (name === "group-by-amount-of-donation")
@@ -272,25 +276,23 @@ function moveToDonations(alpha) {
 	return function(d) {
 			var centreX;
 			var centreY;
-		if (d.value >= 10000000) {
+		if (d.value >= 5000000) {
 			centreY = 300;
 			centreX = 200;
 				
-		} else if (d.value < 10000000 && d.value>= 1000000) {
+		} else if (d.value < 5000000 && d.value>= 2500000) {
 				centreY = 450;
 				centreX = 700;
 				
-		} else if (d.value < 1000000 && d.value >= 500000) {
+		} else if (d.value < 2500000 && d.value >= 500000) {
 				centreY = 600;
 				centreX = 200;
 				
-		} else  if (d.value < 500000 && d.value >= 100000) {
-				centreY = 700;
-				centreX = 750;
+		
 				
 		} else  if (d.value <= maxVal) {
-				centreY = 800;
-				centreX = 200;
+				centreY = 700;
+				centreX = 750;
 		}
 
 		d.x += (centreX - d.x) * (brake + 0.06) * alpha * 1.2;
