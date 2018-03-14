@@ -168,12 +168,6 @@ function amountType() {
 		.on("tick", amounts)
 		.start();
 }
-function amounts(e) {
-	node.each(moveToAmount(e.alpha));
-
-		node.attr("cx", function(d) { return d.x; })
-			.attr("cy", function(d) {return d.y; });
-}
 
 function parties(e) {
 	node.each(moveToParties(e.alpha));
@@ -206,6 +200,13 @@ function all(e) {
 		node.attr("cx", function(d) { return d.x; })
 			.attr("cy", function(d) {return d.y; });
 }
+function amounts(e) {
+	node.each(moveToAmount(e.alpha));
+
+		node.attr("cx", function(d) { return d.x; })
+			.attr("cy", function(d) {return d.y; });
+}
+
 function moveToAmount(alpha) {
 	return function(d) {
 		var centreX;
