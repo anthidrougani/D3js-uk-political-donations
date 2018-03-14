@@ -26,7 +26,7 @@ li {
 }
 
 /* Initial appearance on load */
-#view-party-type, #view-donor-type, #view-source-type {
+#view-party-type, #view-donor-type, #view-source-type,#view-amount-type {
     display: none;
 }
 
@@ -39,7 +39,38 @@ li {
     left: 650px;
     width: 272px;
 }
+#view-amount-type {
+    height: 100%;
+}
 
+#amountofdonation {
+    left: 500px;
+    top: 150px;
+    position: absolute;
+}
+#Upto500000 {
+    left: 200px;
+    top: 200px;
+    position: absolute;
+}
+
+#Upto5000000 {
+    left: 750px;
+    top: 250px;
+    position: absolute;
+}
+
+#Upto10000000 {
+    left: 150px;
+    top: 800px;
+    position: absolute;
+}
+
+#Upto20000000 {
+    left: 750px;
+    top: 700px;
+    position: absolute;
+}
 /*  Public or private funds view */
 
 #public-or-private-money {
@@ -82,24 +113,14 @@ li {
     width: 370px;
     
 }
-#individual {
-    top: 55px;
-}
-#company {
+
+#Y {
     top: 390px;
 }
-#union {
+#N {
     top: 660px;
 }
-#society {
-    top: 205px;
-    text-align: right;
-    right: 0;
-}
-#other {
-    top: 530px;
-    text-align: right;
-    right: 0
+
 }
 
 /* Value scale */
@@ -115,55 +136,7 @@ li {
 #d { top: 485px;}
 #e { top: 435px;}
 #f { top: 648px; left: 575px; }
-/*Donor  */
-#view-donor-type {
-    height: 100%;
-    left: 500px;
-    width: 370px;
-    
-}
-#individual {
-    top: 55px;
-}
-#company {
-    top: 390px;
-}
-#union {
-    top: 660px;
-}
-#society {
-    top: 205px;
-    text-align: right;
-    right: 0;
-}
-#other {
-    top: 530px;
-    text-align: right;
-    right: 0
-}
 
-/* Amount */
-#view-amount-of-donation {
-    height: 100%;
-    left: 450px;
-    width: 370px;
-}
-#first {
-    top: 50px;
-}
-#second{
-    top: 150px;
-    left: 10px;
-}
-#third {
-    top: 335px;
-    left: -80px;
-}
-#last {
-    top: 480px;
-    right: -80px;
-
-}
 /* End of view */
 
 circle {
