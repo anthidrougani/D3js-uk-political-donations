@@ -406,7 +406,7 @@ function mouseover(d, i) {
 	var speech = new SpeechSynthesisUtterance("Donation by " + donor + ". It amounts to " + amount + " pounds");
 	window.speechSynthesis.speak(speech); //omilia//
 	
-	var pht - document.createElement("PHT", );
+	var pht = document.createElement("IMG", );
 	pht.setAttributte("src", imageFile);
 	pht.setAttributte("height", "42");
 	pht.setAttributte("width", "42");
