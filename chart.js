@@ -406,8 +406,13 @@ function mouseover(d, i) {
 	var speech = new SpeechSynthesisUtterance("Donation by " + donor + ". It amounts to " + amount + " pounds");
 	window.speechSynthesis.speak(speech); //omilia//
 	
-	
+	var pht - document.createElement("PHT", );
+	pht.setAttributte("src", imageFile);
+	pht.setAttributte("height", "42");
+	pht.setAttributte("width", "42");
+	document.getElementById("photos").appendChild(pht);
 	}
+  
 
 	
 function mouseout() {
