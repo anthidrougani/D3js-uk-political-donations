@@ -408,6 +408,17 @@ function mouseover(d, i) {
 	
 	
 	}
+var image = document.createElement("img");
+
+	image.src = imageFile;
+
+	image.width = 42;
+
+	image.height = 42;
+	image.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";');
+	document.getElementById("image_donors").appendChild(image);
+		
+	}
 
 function mouseout() {
 	// no more tooltips
