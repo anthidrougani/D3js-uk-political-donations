@@ -93,13 +93,7 @@ li {
     left: 610px;
 }
 
-#filepic{
-    position:fixed;
-    display:inline-block;
-    left: 1100px;
-    top: 200px;
- 
-}
+
 /*  Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
