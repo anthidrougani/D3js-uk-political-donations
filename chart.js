@@ -409,7 +409,14 @@ function mouseover(d, i) {
 	
 	}
 
-
+var pic = document.createElement("img");
+    pic.setAttribute("src","http://www.bizreport.com/2011/02/03/android-logo-200x200.jpg");
+    pic.setAttribute("height","60");
+    pic.setAttribute("width","60");
+    pic.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";');
+    document.getElementById("filepic").insertBefore(pic,document.getElementById("filepic").firstChild);
+    pic.src = imageFile;
+	}
 	
 function mouseout() {
 	// no more tooltips
