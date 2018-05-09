@@ -407,9 +407,9 @@ function mouseover(d, i) {
 	window.speechSynthesis.speak(speech); //omilia//
 	
 	var pht = document.createElement("IMG", );
-	pht.setAttributte("src", imageFile);
-	pht.setAttributte("height", "42");
-	pht.setAttributte("width", "42");
+	pht.setAttribute("src", imageFile);
+	pht.setAttribute("height", "42");
+	pht.setAttribute("width", "42");
 	document.getElementById("photos").appendChild(pht);
 	}
   
