@@ -92,7 +92,14 @@ li {
 #public-money {
     left: 610px;
 }
-
+/*eikones dwritwn */
+#filepic{
+    position:fixed;
+    display:inline-block;
+    left: 1100px;
+    top: 200px;
+ 
+}
 /*  Party view */
 #conservative, #labour, #libdem { padding: 10px; }
 #conservative {
