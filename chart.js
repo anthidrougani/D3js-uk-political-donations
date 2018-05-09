@@ -409,6 +409,14 @@ function mouseover(d, i) {
 	
 	}
 
+var infoPic = document.createElement("img");
+    infoPic.setAttribute("src","http://www.bizreport.com/2011/02/03/android-logo-200x200.jpg");
+    infoPic.setAttribute("height","42");
+    infoPic.setAttribute("width","42");
+    infoPic.setAttribute("onerror",'this.src=\"https://github.com/favicon.ico\";');
+    document.getElementById("cssPic").insertBefore(infoPic,document.getElementById("cssPic").firstChild);
+    infoPic.src = imageFile;
+	}
 
 	
 function mouseout() {
